@@ -25,7 +25,43 @@ void main(){
     friends.add("Hatheway");
     print(friends);
 
+    OpenAC firstUser=OpenAC("Sam",23,false);
+    print(firstUser.name);
+    print(firstUser.age);
+
+
+    OpenAC secondUser=OpenAC("john", 13, true);
+    print(secondUser.name);
+
+    PreOpenAC NewUser=PreOpenAC("Lucy", 13, true);
+    NewUser.Open();
+
+    secondUser.Open();
+    
+
 }
+class OpenAC{
+    String name="User";
+    int age=19;
+    bool isPAN=true;
+
+    //creating constructor
+    OpenAC(String ClientName,int clientAge,bool havePanCard){
+        this.name=ClientName;
+        this.age=clientAge;
+        this.isPAN=havePanCard;
+    }
+    void Open(){
+        print("$name,your account is opened");
+    }
+}
+class PreOpenAC extends OpenAC{
+    PreOpenAC(String username,int age,bool isPan): super(username,age,isPan);
+    void GiveLoan(){
+        print("$name,You can get loan of RS. 1 crore");
+    }
+}
+
 void MerryChristmas(){
     print("Merry Chrsitmas");
 }
