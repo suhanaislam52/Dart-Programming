@@ -20,6 +20,11 @@ void main(){
     int year=Year();
     print(year);
 
+    List friends=["John","Sam","Lucy"];
+    friends.remove("John");
+    friends.add("Hatheway");
+    print(friends);
+
 }
 void MerryChristmas(){
     print("Merry Chrsitmas");
