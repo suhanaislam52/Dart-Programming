@@ -1,8 +1,8 @@
 void main(){
     print("Hello world");
 
-    String Name="Dhruv";
-    Name="Arne";
+    String Name="Sam";
+    Name="John";
     int pincode=454001;
     print(Name);
     pincode=12345;
@@ -11,10 +11,20 @@ void main(){
     print(isRaining);
 
 
-    dynamic Address="Delhi";
+    dynamic Address="Russia";
     Address=1234;
     print(Address);
       
-    
+    MerryChristmas();
 
+    int year=Year();
+    print(year);
+
+}
+void MerryChristmas(){
+    print("Merry Chrsitmas");
+}
+
+int Year(){
+    return 2025;
 }
